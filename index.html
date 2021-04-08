@@ -14,13 +14,34 @@
             <input list="members" id="member" name="member">
             <datalist id="members">
             </datalist>
-            <a href="member_Set_Up.html">Member Set Up</a>
+            <a href="member_Set_Up.html" target="_blank">Member Set Up</a>
             <h2>Clients</h2>
             <label for="client">Select Member</label>
             <input list="clients" id="client" name="client">
             <datalist id="clients">
             </datalist>
             <a href="client_Set_Up.html">Client Set Up</a>
+
+            <form id="memberSetUp">
+                <label for="code">Code</label>
+                <input type="text" id="memberCode" name="memberCode">
+                <label for="name">Name</label>
+                <input type="text" id="memberName" name="memberName">
+                <label for="individual">Individual</label>
+                <input type="radio" id="individual" name="individual/company" value="individual">
+                <label for="company">Company</label>
+                <input type="radio" id="company" name="individual/company" value="company">
+                <input type="submit">
+            </form>
+
+            <form id="clientSetUp">
+                <label for="code">Code</label>
+                <input type="text" id="clientCode" name="clientCode">
+                <label for="name">Name</label>
+                <input type="text" id="clientName" name="clientName">
+                <input type="submit">
+            </form>
         </main>
     </body>
+    <script src="member_Set_Up.js"></script>
 </html>

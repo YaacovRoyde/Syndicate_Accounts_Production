@@ -3,45 +3,73 @@
     <head>
         <title>Syndicate Accounts Production</title>
         <meta charset="utf-8">
+        <link href="index.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        
+        <header id="header">
             <h1>Syndicate Accounts Production</h1>
         </header>
+
         <main>
-            <h2>Members</h2>
-            <label for="member">Select Member</label>
-            <input list="members" id="member" name="member">
-            <datalist id="members">
-            </datalist>
-            <a href="member_Set_Up.html" target="_blank">Member Set Up</a>
-            <h2>Clients</h2>
-            <label for="client">Select Member</label>
-            <input list="clients" id="client" name="client">
-            <datalist id="clients">
-            </datalist>
-            <a href="client_Set_Up.html">Client Set Up</a>
+            
+            <section id="home">
+                <section id="members">
+                    <h2>Members</h2>
+                    <label for="member">Select Member</label>
+                    <input list="membersList" id="member" name="member">
+                    <datalist id="membersList">
+                    </datalist>
+                    <a href="#" id="memberSetUpLink">Member Set Up</a>
+                </section>
 
-            <form id="memberSetUp">
-                <label for="code">Code</label>
-                <input type="text" id="memberCode" name="memberCode">
-                <label for="name">Name</label>
-                <input type="text" id="memberName" name="memberName">
-                <label for="individual">Individual</label>
-                <input type="radio" id="individual" name="individual/company" value="individual">
-                <label for="company">Company</label>
-                <input type="radio" id="company" name="individual/company" value="company">
-                <input type="submit">
-            </form>
+                <section id="clients">
+                    <h2>Clients</h2>
+                    <label for="client">Select Member</label>
+                    <input list="clientsList" id="client" name="client">
+                    <datalist id="clientsList">
+                    </datalist>
+                    <a href="#" id="clientSetUpLink">Client Set Up</a>
+                </section>
+            </section>
 
-            <form id="clientSetUp">
-                <label for="code">Code</label>
-                <input type="text" id="clientCode" name="clientCode">
-                <label for="name">Name</label>
-                <input type="text" id="clientName" name="clientName">
-                <input type="submit">
-            </form>
+            <section id="setUp">
+                <section id="setUpHeader">
+                    <h2></h2>
+                    <nav>
+                        <a href="#" id="homeLink">Home</a>
+                    </nav>
+                </section>
+                    
+                <section id="memberSetUp">
+                    <form id="memberSetUpForm">
+                        <label for="code">Code</label>
+                        <input type="text" id="memberCode" name="memberCode">
+                        <label for="name">Name</label>
+                        <input type="text" id="memberName" name="memberName">
+                        <label for="individual">Individual</label>
+                        <input type="radio" id="individual" name="individual/company" value="individual">
+                        <label for="company">Company</label>
+                        <input type="radio" id="company" name="individual/company" value="company">
+                        <input type="submit">
+                    </form>
+                </section>
+                
+                <section id="clientSetUp">
+                    <form id="clientSetUpForm">
+                        <label for="code">Code</label>
+                        <input type="text" id="clientCode" name="clientCode">
+                        <label for="name">Name</label>
+                        <input type="text" id="clientName" name="clientName">
+                        <input type="submit">
+                    </form>
+                </section>
+            </section>
+
         </main>
     </body>
+
     <script src="member_Set_Up.js"></script>
+    <script src="client_Set_Up.js"></script>
+
 </html>

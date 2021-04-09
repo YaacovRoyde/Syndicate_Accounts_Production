@@ -1,0 +1,7 @@
+#setUp {
+    display: none;
+};
+
+#header, #members, #clients {
+    display: block;
+};
